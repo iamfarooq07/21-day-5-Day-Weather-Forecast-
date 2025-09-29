@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>5-Day Weather Forecast</title>
+</head>
+
+<body
+    class="w-screen h-screen bg-gradient-to-br from-blue-400 via-sky-300 to-blue-600 flex justify-center items-center p-4">
+    <div class="container bg-white/20 backdrop-blur-md w-full max-w-6xl rounded-3xl shadow-xl p-6 text-center">
+        <!-- Heading -->
+        <h1 class="text-4xl font-extrabold text-white mb-8 drop-shadow-md">
+            5-Day Weather Forecast
+        </h1>
+
+        <!-- Search Box -->
+        <div class="flex gap-3 mb-8 w-full max-w-2xl mx-auto">
+            <input id="city" placeholder="Enter City Name"
+                class="flex-1 p-4 bg-white/80 rounded-2xl text-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm" />
+            <button id="getForecast"
+                class="px-6 py-3 text-lg font-semibold rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:scale-105 transform transition shadow-lg">
+                Search
+            </button>
+        </div>
+
+        <!-- Forecast Grid -->
+        <div id="forecast"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-6xl mx-auto">
+
+            <!-- Forecast Card -->
+            <!-- <div
+                class="bg-white rounded-3xl shadow-lg p-5 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition transform">
+                <p class="font-semibold text-gray-700 mb-2">Date</p>
+                <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather" class="w-20 my-3">
+                <p class="text-blue-600 font-bold text-2xl">25°C</p>
+                <p class="text-gray-500">Sunny</p>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
